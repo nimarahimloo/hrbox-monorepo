@@ -1,0 +1,10 @@
+{
+  "name": "@hrbox/shared-templates",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "files": ["src"],
+  "exports": {
+    "DarkModeProvider": "./src/context/DarkMode.tsx"
+  }
+}

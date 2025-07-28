@@ -1,0 +1,83 @@
+const BASE = 'https://hrlink.hrbox.me:50443/DesktopModules/Freelancer/api';
+
+export const HRLinkApiEndpoints = {
+    Award: {
+        create: `${BASE}/Award/Add`,
+        edit: `${BASE}/Award/Edit`,
+        delete: `${BASE}/Award/Delete`,
+        search: `${BASE}/Award/Search`,
+        getList: `${BASE}/Award/GetList`,
+        getDetail: `${BASE}/Award/Get`,
+    },
+    Course: {
+        create: `${BASE}/Course/Add`,
+        edit: `${BASE}/Course/Edit`,
+        delete: `${BASE}/Course/Delete`,
+        search: `${BASE}/Course/Search`,
+        getList: `${BASE}/Course/GetCourseList?TypeId=2`,
+        getDetail: `${BASE}/Course/Get`,
+    },
+    Education: {
+        create: `${BASE}/Education/Add`,
+        edit: `${BASE}/Education/Edit`,
+        delete: `${BASE}/Education/Delete`,
+        search: `${BASE}/Education/Search`,
+        getList: `${BASE}/Education/GetList`,
+        getDetail: `${BASE}/Education/Get`,
+        universities: `${BASE}/Education/GetUniversity`,
+        fields: `${BASE}/MasterService/GetFieldOfEducation`,
+    },
+    Experience: {
+        create: `${BASE}/Experience/Add`,
+        edit: `${BASE}/Experience/Edit`,
+        delete: `${BASE}/Experience/Delete`,
+        search: `${BASE}/Experience/Search`,
+        getList: `${BASE}/Experience/GetList`,
+        getDetail: `${BASE}/Experience/GetDetails`,
+        activityTypes: `${BASE}/Experience/TypeOfActivity`,
+        industries: `${BASE}/MasterService/GetIndustrys`,
+    },
+    Skills: {
+        create: `${BASE}/UserSkill/Add`,
+        edit: `${BASE}/UserSkill/Edit`,
+        delete: `${BASE}/UserSkill/Delete`,
+        search: `${BASE}/UserSkill/Search`,
+        hardSkills: `${BASE}/UserSkill/UserSkillProfisionalAndSearch`,
+        softSkills: `${BASE}/UserSkill/UserSkillGeneralAndSearch`,
+        byType: `${BASE}/UserSkill/GetSkillsByType`,
+        byParentIdAndType: `${BASE}/UserSkill/GetSkillsByParentIdAndType`,
+    },
+    Company: {
+        list: `${BASE}/Company/GetCompaniesList`,
+        sendRequest: `${BASE}/Company/SendRequest`,
+        detail: `${BASE}/Company/GetDetail`,
+        follow: `${BASE}/Company/FollowAndUnFollowCompany`,
+    },
+    JobOffers: {
+        list: `${BASE}/JobOffers/GetAndSearchJobOffer`,
+        opportunities: `${BASE}/JobOffers/GetAndSearchJobOpportunities`,
+    },
+    Profile: {
+        get: `${BASE}/Profile/GetProfile`,
+        changePassword: `${BASE}/profile/ChangePassword`,
+        edit: `${BASE}/Profile/EditProfile`,
+        getGeneralSetting: `${BASE}/Profile/GetGeneralSetting`,
+        editGeneralSetting: `${BASE}/Profile/EditGeneralSetting`,
+    },
+    User: {
+        get: `${BASE}/User/GetUser`,
+        edit: `${BASE}/User/Edit`,
+        addLocation: `${BASE}/MasterService/AddLocation`,
+        editLocation: `${BASE}/MasterService/EditLocation`,
+        jobGroup: `${BASE}/MasterService/GetJobGroup`,
+        jobCategory: `${BASE}/MasterService/GetJobCategory`,
+        militaryStatus: `${BASE}/MasterService/GetMilitaryStatus`,
+        placeByLevel: `${BASE}/MasterService/GetPlaceByLevel?level=1`,
+    },
+    Dashboard: {
+        data: `${BASE}/Dashboard/GetAllAdaptionByUserId`,
+    },
+    Auth: {
+        logout: 'https://hrlink.hrbox.me:50443/DesktopModules/SSO/api/Login/LogOff',
+    },
+};

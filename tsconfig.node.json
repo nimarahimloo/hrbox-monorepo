@@ -1,0 +1,6 @@
+{
+  "extends": "@hrbox/configs/tsconfig.node",
+  "include": [
+    "vite.config.ts"
+  ]
+}

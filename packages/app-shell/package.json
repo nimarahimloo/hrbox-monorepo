@@ -1,0 +1,14 @@
+{
+  "name": "@hrbox/app-shell",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/main.tsx",
+  "files": [
+    "src/App.tsx",
+    "src/main.tsx"
+  ],
+  "exports": {
+    "./App": "./App.tsx",
+    "./main": "./main.tsx"
+  }
+}

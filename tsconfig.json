@@ -1,0 +1,13 @@
+{
+  "extends": "@hrbox/configs/tsconfig",
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./apps/hrlink",
+    "paths": {
+      "@hrbox/*": ["@hrbox/packages/*"]
+    }
+  },
+  "include": [
+    "apps/hrlink/src"
+  ]
+}

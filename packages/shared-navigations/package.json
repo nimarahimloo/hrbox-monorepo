@@ -1,0 +1,7 @@
+{
+  "name": "@hrbox/shared-navigations",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "files": ["src"]
+}

@@ -1,0 +1,1 @@
+export { App } from '@hrbox/app-shell';
