@@ -1,37 +1,18 @@
-import { RouteObject } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import { createProjectRoutes } from "@hrbox/shared/utils/createProjectRoutes";
+import { createProjectPaths } from "@hrbox/shared-navigations";
+import {App404} from "@hrbox/shared-components";
 
-import Page404 from "../pages/404";
+import { Dashboard, Projects } from "./lazyComponents";
 
-import {
-  Dashboard, Projects
-} from "@/routes/components.tsx";
+const ROOTS_PROJECT_MANAGEMENT = "/project-management";
 
+export const PATH_PROJECT_MANAGEMENT = createProjectPaths(ROOTS_PROJECT_MANAGEMENT);
 
-export const routes: RouteObject[] = [
+export const routes = createProjectRoutes(
+  ROOTS_PROJECT_MANAGEMENT,
   {
-    path: "/",
-    element: <Navigate replace to="/project-management" />,
+    Dashboard: Dashboard,
+    Projects: Projects,
   },
-  {
-    path: "/project-management",
-    children: [
-      {
-        index: true,
-        element: <Navigate replace to="dashboard" />,
-      },
-      {
-        path: "dashboard",
-        element: <Dashboard />,
-      },
-      {
-        path: "projects",
-        element: <Projects />,
-      },
-    ],
-  },
-  {
-    path: "*",
-    element: <Page404 />,
-  },
-];
+  App404
+);

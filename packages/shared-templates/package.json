@@ -5,6 +5,6 @@
   "type": "module",
   "files": ["src"],
   "exports": {
-    "DarkModeProvider": "./src/context/DarkMode.tsx"
+    ".": "./src/index.ts"
   }
 }

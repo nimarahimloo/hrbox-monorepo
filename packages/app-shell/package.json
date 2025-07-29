@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "main": "src/main.tsx",
-  "files": [
-    "src/App.tsx",
-    "src/main.tsx"
-  ],
+  "files": ["src"],
   "exports": {
-    "./App": "./App.tsx",
-    "./main": "./main.tsx"
+    ".": "./src/index.ts"
   }
 }

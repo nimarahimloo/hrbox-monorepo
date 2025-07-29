@@ -1,11 +1,10 @@
-// packages/app-shell/App.tsx
 import { useSelector } from 'react-redux';
 import * as React from 'react';
 import { ToastContainer } from 'react-toastify';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { RootState } from './redux/createStore';
+import { RootState } from '@hrbox/shared-services';
 
 interface AppProps {
     children: React.ReactNode;

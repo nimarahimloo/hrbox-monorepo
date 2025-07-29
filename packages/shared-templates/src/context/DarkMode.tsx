@@ -5,6 +5,7 @@ import {
   useState,
   startTransition,
 } from "react";
+import * as React from "react";
 
 const DarkModeContext = createContext({
   darkMode: false,
@@ -15,7 +16,7 @@ export const useDarkMode = () => {
   return useContext(DarkModeContext);
 };
 
-function DarkModeProvider({ children }: { children: React.ReactNode }) {
+export const DarkModeProvider = ({ children }: { children: React.ReactNode }) => {
   const [darkMode, setDarkMode] = useState(() => {
     const savedMode = localStorage.getItem("darkMode");
 
@@ -43,5 +44,3 @@ function DarkModeProvider({ children }: { children: React.ReactNode }) {
     </DarkModeContext.Provider>
   );
 }
-
-export default DarkModeProvider;
