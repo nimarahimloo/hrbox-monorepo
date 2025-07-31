@@ -1,11 +1,12 @@
 {
   "name": "@hrbox/shared-components",
   "version": "1.0.0",
-  "main": "src/index.ts",
   "private": true,
   "type": "module",
-  "exports": {
-    ".": "./src/index.ts"
+  "scripts": {
+    "build": "tsc --build"
   },
-  "files": ["src"]
+  "exports": {
+    ".": "./dist/index.js"
+  }
 }

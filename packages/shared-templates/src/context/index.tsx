@@ -1,3 +1,3 @@
-export * from "./DarkMode"
-export { DarkModeProvider } from "./DarkMode";
-export * from "./RoutesContext";
+export * from "./DarkMode.js"
+export { DarkModeProvider } from "./DarkMode.js";
+export * from "./RoutesContext.js";

@@ -2,4 +2,4 @@ export {
   useFetchCompanyListQuery,
   useGetDetailQuery,
   useSendRequestMutation,
-} from "./rtkApi";
+} from "./rtkApi.js";

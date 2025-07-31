@@ -4,14 +4,14 @@ import { ToastContainer } from 'react-toastify';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { RootState } from '@hrbox/shared-services';
+import { RootState } from '@hrbox/shared-templates';
 
 interface AppProps {
     children: React.ReactNode;
 }
 export const App = ({ children }: AppProps) => {
     const lang = useSelector((state: RootState) => state.language.lang);
-    const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
+    // const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
     const [dir, setDir] = useState<'ltr' | 'rtl'>(lang === 'en' ? 'ltr' : 'rtl');
 
     useEffect(() => {
@@ -19,13 +19,13 @@ export const App = ({ children }: AppProps) => {
     }, [lang]);
 
     useEffect(() => {
-        const handleResize = () => {
-            setIsLargeScreen(window.innerWidth >= 1441);
-        };
+        // const handleResize = () => {
+        //     setIsLargeScreen(window.innerWidth >= 1441);
+        // };
 
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+        // handleResize();
+        // window.addEventListener('resize', handleResize);
+        // return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     return (

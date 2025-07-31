@@ -1,10 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocation, useRoutes } from "react-router-dom";
-import DarkModeBg from "@hrbox/shared-templates";
-import LightModeBg from "@/assets/img/lightmode-bg.png";
+import {DarkModeBg} from "@hrbox/shared-templates";
+import {LightModeBg} from "@hrbox/shared-templates";
 import { useDarkMode } from "@hrbox/shared-templates";
-// وارد کردن هوک سفارشی برای دسترسی به مسیرها از Context
-import { useProjectRoutes } from "@hrbox/shared-utils/RoutesContext";
+import { useProjectRoutes } from "@hrbox/shared-templates";
 export const AppRoutes = () => {
   const location = useLocation();
   const routes = useProjectRoutes();

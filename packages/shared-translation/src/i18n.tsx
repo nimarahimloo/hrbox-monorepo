@@ -24,6 +24,6 @@ export const initI18n = (projectResources: any) => {
     defaultNS: "common",
     interpolation: { escapeValue: false },
   });
-
   return i18n;
 };
+export { i18n };

@@ -2,9 +2,11 @@
   "name": "@hrbox/app-shell",
   "version": "1.0.0",
   "private": true,
-  "main": "src/main.tsx",
-  "files": ["src"],
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build"
+  },
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./dist/index.js"
   }
 }

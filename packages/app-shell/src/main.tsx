@@ -4,12 +4,12 @@ import { Provider as ReduxProvider } from 'react-redux';
 import { I18nextProvider } from 'react-i18next';
 import { PersistGate } from 'redux-persist/integration/react';
 import { DarkModeProvider } from '@hrbox/shared-templates';
-import { store, persistor } from '@hrbox/shared-services';
-import i18n from '@hrbox/shared-translation';
-import './index.css';
-import { Provider } from "./provider";
+import { store, persistor } from '@hrbox/shared-templates';
+import {i18n} from '@hrbox/shared-translation';
+import '@hrbox/shared-styles';
+import { Provider } from "./provider.js";
 
-import { RootRouterLoader } from '@hrbox/shared-navigations/src/routes/RootRouterLoader';
+import { RootRouterLoader } from '@hrbox/shared-navigations';
 
 export const renderApp = (id: string = 'root') => {
   const root = document.getElementById(id);

@@ -1,4 +1,4 @@
-import {AppHeader , AppDocs , AppMessengerButton , AppSideBar} from "@hrbox/shared-components";
+import {AppHeader , AppDocs , AppSupportButton , AppSideBar} from "@hrbox/shared-components";
 
 export const HRBOXLayout = ({ props }: { props: any }) => {
     const { children } = props;
@@ -14,7 +14,7 @@ export const HRBOXLayout = ({ props }: { props: any }) => {
                     <AppDocs />
                 </div>
                 <div/>
-                <AppMessengerButton/>
+                <AppSupportButton/>
             </div>
         </>
     );

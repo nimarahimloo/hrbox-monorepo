@@ -3,7 +3,6 @@ import { Button } from "@heroui/react";
 export const AppButton = ({ props }: { props: any }) => {
   const {
     text,
-    className,
     fullWidth,
     size,
     type,
@@ -16,7 +15,7 @@ export const AppButton = ({ props }: { props: any }) => {
 
   return (
     <Button
-      className={className}
+      className="rounded-2"
       endContent={endContent}
       fullWidth={fullWidth}
       isIconOnly={isIconOnly}

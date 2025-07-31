@@ -1,4 +1,4 @@
-import { useDarkMode } from "@/context/DarkMode.tsx";
+import { useDarkMode } from "../context/index.js";
 
 export const HourGlass = ({
   color = "#04070E",

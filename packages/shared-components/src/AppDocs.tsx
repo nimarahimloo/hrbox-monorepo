@@ -16,7 +16,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { DocItem } from "./AppDocItems.tsx";
+import { DocItem } from "./AppDocItems.js";
 
 export const AppDocs = () => {
   const { t } = useTranslation();

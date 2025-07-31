@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Button, Input } from "@heroui/react";
 import { useTranslation } from "react-i18next";
 
-import { useDarkMode } from "@/context/DarkMode.tsx";
+import { useDarkMode } from "@hrbox/shared-templates";
 
 export default function Search({
   color = "#04070E",

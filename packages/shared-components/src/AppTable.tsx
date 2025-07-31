@@ -17,8 +17,8 @@ import {
   useDisclosure,
 } from "@heroui/react";
 
-import { AppPagination } from "@/components/AppPagination.tsx";
-import { CloseIcon } from "@/icons/CloseIcon.tsx";
+import { AppPagination } from "./AppPagination.js";
+import { CloseIcon } from "@hrbox/shared-templates";
 
 const AppTable = ({ props }: { props: any }) => {
   const {

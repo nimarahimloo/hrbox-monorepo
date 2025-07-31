@@ -12,8 +12,8 @@ import { useDispatch, useSelector } from "react-redux";
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 
-import { AppDispatch, RootState } from "@/redux/createStore.ts";
-import { setLanguage, setLocalLanguage } from "@/redux/reducers/language.ts";
+import { AppDispatch, RootState } from "@hrbox/shared-templates";
+import { setLanguage, setLocalLanguage } from "@hrbox/shared-templates";
 
 export type SideBarItem = {
   icon: React.ReactNode;
@@ -76,11 +76,12 @@ export const AppSideBar = ({ menu }: SideBarProps) => {
   };
 
   useEffect(() => {
-    dispatch(setLanguage(localStorage.getItem("lang")));
-    i18n.changeLanguage(localStorage.getItem("lang") as string);
-    document.documentElement.lang = localStorage.getItem("lang") as string;
-  }, []);
+    const lang = localStorage.getItem("lang") ?? "en";
 
+    dispatch(setLanguage(lang));
+    i18n.changeLanguage(lang);
+    document.documentElement.lang = lang;
+  }, []);
   useEffect(() => {
     const currentPath = location.pathname;
     const activeItem = menu.find((item) => item.route === currentPath);

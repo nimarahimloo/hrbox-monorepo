@@ -2,9 +2,11 @@
   "name": "@hrbox/shared-styles",
   "version": "1.0.0",
   "private": true,
-  "main": "index.css",
-  "files": ["index.css"],
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build"
+  },
   "exports": {
-    ".": "./index.css"
+    ".": "./src/index.ts"
   }
 }

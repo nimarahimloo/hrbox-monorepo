@@ -1,4 +1,4 @@
-import { useDarkMode } from "@hrbox/shared-templates";
+import { useDarkMode } from "../context/index.js";
 
 const Logo = () => {
   const { darkMode } = useDarkMode();

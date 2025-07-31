@@ -1,1 +1,1 @@
-export * from "./company/hook";
+export * from "./company/hook.js";

@@ -1,4 +1,4 @@
-import { useDarkMode } from "@/context/DarkMode.tsx";
+import { useDarkMode } from "../context/index.js";
 
 export function Plus({
   color = "#04070E",

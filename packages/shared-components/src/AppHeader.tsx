@@ -10,11 +10,11 @@ import { useTranslation } from "react-i18next";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import { Index as Icons } from "@/icons/Index.tsx";
-import { useDarkMode } from "@/context/DarkMode";
-import AvatarUser from "@/assets/img/Avatar.jpg";
-import { DynamicBreadcrumbs } from "@/components/breadCrummb.tsx";
-import { HourGlass } from "@/icons/HourGlass.tsx";
+import { useDarkMode } from "@hrbox/shared-templates";
+import {AvatarUser} from "@hrbox/shared-templates";
+import { AppBreadcrumb } from "./AppBreadCrumb.js";
+import { HourGlass } from "@hrbox/shared-templates";
+import {Logo} from "@hrbox/shared-templates"
 
 export const AppHeader = () => {
   const { toggleDarkMode, darkMode } = useDarkMode();
@@ -37,7 +37,7 @@ export const AppHeader = () => {
         className="flex justify-center items-center w-[80px]"
         onClick={() => navigate("/")}
       >
-        <Icons.Logo />
+        <Logo />
       </button>
       <div className="flex flex-col w-full">
         <div className="flex items-center justify-between w-full">
@@ -57,7 +57,7 @@ export const AppHeader = () => {
                 size="18"
                 variant="Bold"
               />
-              <DynamicBreadcrumbs pages={currentPages} />
+              <AppBreadcrumb pages={currentPages} />
             </div>
           </div>
           <div className="flex gap-2 mb-3">

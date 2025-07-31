@@ -1,8 +1,10 @@
 {
   "name": "hrbox-monorepo",
   "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.13.1",
   "scripts": {
-    "dev:pm": "npx pnpm --filter project-management dev",
+    "dev:pm": "pnpm turbo run dev --filter=@hrbox-apps/project-management\n",
     "build:all": "pnpm run build --filter=all",
     "clean": "rm -rf node_modules pnpm-lock.yaml && pnpm install",
     "prepare": "husky install"
@@ -32,6 +34,7 @@
     "@react-aria/visually-hidden": "3.8.19",
     "@react-types/shared": "3.27.0",
     "@reduxjs/toolkit": "^2.6.0",
+    "@types/node": "^24.1.0",
     "apexcharts": "^4.7.0",
     "axios": "^1.9.0",
     "chart.js": "^4.4.9",
@@ -69,18 +72,18 @@
     "yup": "^1.6.1"
   },
   "devDependencies": {
+    "@hrbox-apps/project-management": "workspace:*",
     "@hrbox/app-shell": "workspace:*",
-    "@hrbox/configs": "workspace:*",
     "@hrbox/shared-components": "workspace:*",
     "@hrbox/shared-navigations": "workspace:*",
     "@hrbox/shared-services": "workspace:*",
     "@hrbox/shared-styles": "workspace:*",
     "@hrbox/shared-templates": "workspace:*",
     "@hrbox/shared-translation": "workspace:*",
-    "@hrbox-apps/hrlink": "workspace:*",
-    "@hrbox-apps/project-management": "workspace:*",
+    "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^4.7.0",
     "husky": "^9.1.7",
+    "turbo": "^2.5.5",
     "typescript": "5.6.3",
     "vite": "^6.2.0",
     "vite-tsconfig-paths": "^4.3.2"

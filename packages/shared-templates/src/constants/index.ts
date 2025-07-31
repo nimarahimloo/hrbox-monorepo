@@ -1,2 +1,2 @@
-export * from "./hrlink-api"
-export * from "./config"
+export * from "./hrlink-api.js"
+export * from "./config.js"

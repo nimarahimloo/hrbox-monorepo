@@ -1,7 +1,7 @@
 import { Autocomplete, AutocompleteItem } from "@heroui/react";
 import { useSelector } from "react-redux";
 
-import { RootState } from "@/redux/createStore.ts";
+import { RootState } from "@hrbox/shared-templates";
 
 export const AppAutoComplete = ({ props }: { props: any }) => {
   const { data, label, placeholder, required } = props;

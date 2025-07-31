@@ -1,7 +1,7 @@
 import { cn, Switch } from "@heroui/react";
 import { useSelector } from "react-redux";
 
-import { RootState } from "@/redux/createStore.ts";
+import { RootState } from "@hrbox/shared-templates";
 
 export const AppSwitch = ({ props }: { props: any }) => {
   const { isSelected, handleChange, children } = props;

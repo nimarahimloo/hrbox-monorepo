@@ -1,2 +1,2 @@
-export * from "./App"
-export * from "./main"
+export * from "./App.js"
+export * from "./main.js"

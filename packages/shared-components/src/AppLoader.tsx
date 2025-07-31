@@ -1,6 +1,8 @@
-import Lottie from "lottie-react";
+import React from "react";
 
-import loader from "../lottie/loader.json";
+const Lottie = (await import('lottie-react')).default as React.FC<any>;
+
+import {loader} from "@hrbox/shared-templates";
 
 export const AppLoader = () => {
   return (

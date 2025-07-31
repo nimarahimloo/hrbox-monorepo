@@ -1,5 +1,5 @@
-import { baseApi } from "../../../baseApi";
-import { companyEndpoints } from "./endpoints";
+import { baseApi } from "../../../baseApi.js";
+import { companyEndpoints } from "./endpoints.js";
 
 export const companyApi = baseApi.injectEndpoints({
   endpoints: (build) => ({
