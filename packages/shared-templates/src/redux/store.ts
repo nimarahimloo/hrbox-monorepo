@@ -30,6 +30,5 @@ export const createStoreWithReducers = (rootReducer: Reducer) => {
 
   return { store, persistor };
 };
-
 export type RootState = ReturnType<Reducer>;
 export type AppDispatch = (...args: any[]) => any;

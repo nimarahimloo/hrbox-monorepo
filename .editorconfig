@@ -17,12 +17,11 @@ indent_size = 2
 indent_size = 2
 quote_type = double
 
-# برای Markdown و YAML
+
 [*.{md,yml,yaml}]
 trim_trailing_whitespace = false
 insert_final_newline = true
 
-# برای Shell Scripts
 [*.sh]
 indent_style = space
 indent_size = 2
